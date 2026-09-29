@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Privacy Policy | AutoFill & Shipment Scraper</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; color: #17212b; background: #f5f7f8; }
+    body { margin: 0; }
+    main { box-sizing: border-box; max-width: 780px; padding: 56px 28px 80px; margin: 0 auto; background: #fff; min-height: 100vh; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; margin: 0 0 .35rem; }
+    h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+    p, li { max-width: 68ch; }
+    ul { padding-left: 1.3rem; }
+    .eyebrow { color: #1b5b72; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .75rem; }
+    .date { color: #52616d; margin-top: 0; }
+    a { color: #075a78; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">AutoFill &amp; Shipment Scraper</p>
+    <h1>Privacy Policy</h1>
+    <p class="date">Effective 29 September 2026</p>
+
+    <p>This policy describes how the AutoFill &amp; Shipment Scraper browser extension handles information while assisting authorized users with transport forms and shipment processing on the supported logistics portal.</p>
+
+    <h2>Information the extension handles</h2>
+    <p>On pages of <code>solutions.inet-logistics.com</code>, the extension reads transport form values and shipment details needed for its functions. These may include shipment and delivery reference numbers, order number, gross weight, destination country, service priority, transport condition, carrier information, prices, article weights, and pickup and delivery fields. The information is processed in the browser to fill transport dates, flag missing prices, check weights, and prepare a shipment summary.</p>
+
+    <h2>Local output and retention</h2>
+    <p>When a qualifying shipment is available, the extension places a text summary in the tab's <code>window.name</code> for the local workflow and downloads a file named <code>shipment_data_temp.txt</code> to the browser's configured downloads location. The file may be read by a separate local workflow. A later download with the same name may overwrite it. Downloaded files remain on the device until the user or their organization deletes them. The tab value may remain while the tab is open, subject to browser behavior during navigation. Users should handle both outputs according to their organization's shipment-data rules.</p>
+
+    <h2>Transmission and sharing</h2>
+    <p>The extension code does not send shipment data to a developer-controlled server and does not contain analytics, advertising, or tracking services. It does not sell shipment data. Normal use of the logistics portal is governed by that portal's own services and policies. A user or a separate local application may process or share the downloaded file outside the extension; those actions are outside this extension's control.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Access to the supported logistics portal:</strong> needed to read and fill relevant transport forms and extract shipment details.</li>
+      <li><strong>Downloads:</strong> needed to save the shipment summary as a local text file.</li>
+    </ul>
+    <p>The extension uses information obtained through browser APIs only to provide these shipment workflow functions, in accordance with the Chrome Web Store User Data Policy and its Limited Use requirements.</p>
+
+    <h2>Changes and contact</h2>
+    <p>This policy may be updated if the extension's behavior changes. The effective date above will be revised when that happens. For questions or privacy concerns, open an issue in the <a href="https://github.com/molntam/extension-privacy-policy/issues">policy repository</a>.</p>
+  </main>
+</body>
+</html>
